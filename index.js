@@ -155,4 +155,83 @@ function composeb(fun1, fun2) {
     };
 }
 
-console.log(composeb(add, mul) (2, 3, 5)); //25
+composeb(add, mul) (2, 3, 5); //25
+
+/*
+ * Write a function that accepts a function and calls only once and returns
+ * undefined when we try to call it again
+ */
+
+function once(fun) {
+    return function (a, b) {
+        var temp;
+        if (fun) {
+            temp = fun;
+            fun = undefined;
+            return temp (a, b);
+        }
+        return undefined;
+    };
+}
+
+var add_once = once(add);
+add_once(3, 4); // 7
+add_once(3, 5); // undefined
+
+
+/*
+ * Write an fromTo binary function that takes from and to parameters
+ * and produces that returns the values in the from to range
+ * var index = fromTo(0, 3);
+ * index(); //0
+ * index(); //1
+ * index(); //2
+ * index(); //undefined
+ */
+
+function fromTo(from, to) {
+
+    return function () {
+        var result = undefined;
+        if (from < to) {
+            result = from;
+            from++;
+        }
+        return result;
+    };
+}
+
+var index = fromTo(0, 3);
+
+index(); //0
+index(); //1
+index(); //2
+index(); //undefined
+
+
+/*
+ * Write an element function that takes an array and an optional function
+ * (like the result of fromTo) and produces a function that will produce the
+ * elements of the array
+ * var val = element(['a','b','c','d'], fromTo(1, 3));
+ * val(); // 'b'
+ * val(); // 'c'
+ * val() // undefined
+ */
+
+function element(list, fun) {
+
+    //If no fromTo method is passed send back complete array
+    if (fun === undefined){
+        fun = fromTo(0, list.length);
+    }
+    return function() {
+        return list[fun()];
+    };
+}
+
+var val = element(['a','b','c','d'], fromTo(1, 3));
+
+val();
+val();
+val();
