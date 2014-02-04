@@ -235,3 +235,128 @@ var val = element(['a','b','c','d'], fromTo(1, 3));
 val();
 val();
 val();
+
+
+
+
+/*
+* Write a collect function that takes a function and an array and produces
+* a function that will collect the results in the array
+* var array = [],
+* col = collect(fromTo(1, 3), array);
+* col(); //1
+* col(); //2
+* col(); //undefined
+* console.log(array); // [1, 2]
+ */
+
+function collect(fun, array) {
+    return function () {
+        var val = fun();
+        if(val) {
+            array.push(val);
+            return val;
+        }
+        return undefined;
+    };
+}
+
+var array = [],
+    col = collect(fromTo(1, 3), array);
+
+
+
+col(); //1
+col(); //2
+col(); //undefined
+//array; // [1, 2]
+
+function filter(getVal, testFun){
+    return function() {
+       var val ;
+
+        do {
+            val = getVal();
+        } while (val !== undefined && !testFun(val));
+
+        return val;
+    };
+}
+
+
+var fil = filter(fromTo(0, 5), function third(value) {
+   return (value % 3) === 0;
+});
+
+fil(); //0
+fil(); //3
+fil(); //undefined
+
+
+/*
+ * Write a concat function that takes two sequence generating functions and
+ * produces a function that combines the sequences
+ * var con = concat(fromTo(1, 3), fromTo(0, 2));
+ * con(); //1
+ * con(); //2
+ * con(); //0
+ * con(); //1
+ * con(); //undefined
+ */
+
+function concat(seq1, seq2) {
+    return function () {
+        var value;
+
+        if (seq1 !== undefined) {
+            value = seq1();
+            if (value !== undefined) {
+                return value;
+            }
+            seq1 = undefined;
+        }
+        return seq2();
+    };
+}
+
+var con = concat(fromTo(1, 3), fromTo(0, 2));
+
+con(); //1
+con(); //2
+con(); //0
+con(); //1
+con(); //undefined
+
+/*
+ * write a factory function that returns two functions that implement an
+ * up/down counter hiding the counter
+ * var counter = counterf(10),
+ *     next = counter.inc,
+ *    prev = counter.dec;
+ *    next(); //11
+ *    prev(); //10
+ *    prev(); //9
+ *    next(); //10
+ */
+
+var counterf = function(x) {
+    return {
+        inc: function(){
+            return ++x;
+        },
+
+        dec: function() {
+            return --x;
+        }
+    };
+};
+
+
+var counter = counterf(10),
+    next = counter.inc,
+    prev = counter.dec;
+
+next(); //11
+prev(); //10
+prev(); //9
+next(); //10
