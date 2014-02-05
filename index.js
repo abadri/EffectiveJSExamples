@@ -360,3 +360,177 @@ next(); //11
 prev(); //10
 prev(); //9
 next(); //10
+
+/*
+ * Make a revocable function that takes a nice function and returns an object
+ * contains an invoke function that can invoke the nice function and a
+ * revoke function that disables the invoke function
+ */
+
+
+var revocable = function(log) {
+    return {
+        invoke: function (arg) {
+            return log && log(arg);
+        },
+        revoke: function () {
+            log = undefined;
+        }
+    };
+
+};
+
+var temp = revocable (console.log);
+    invoke = temp.invoke;
+
+//invoke(7); //7
+//temp.revoke();
+//invoke(8); //undefined
+
+/*
+ * Make a functin gensymf that makes a function that generates unique symbols
+ * var gensymg = gensymf("G"),
+ *     gensymh = gensymf("H");
+ *     gyensymg();  //G1
+ *     gyensymh();  //H1
+ *     gyensymg();  //G2
+ *     gyensymh();  //H2
+ */
+
+function gensymf(prefix) {
+    var count = 0;
+    return function () {
+         count++;
+         return prefix+count;
+    };
+}
+
+var gensymg = gensymf("G"),
+    gensymh = gensymf("H");
+
+gensymg();  //G1
+gensymh();  //H1
+gensymg();  //G2
+gensymh();  //H2
+
+
+/*
+ * Write a function gensymff that take a unary function and a seed
+ * and retuns a gensymf
+ */
+
+function gensymff(seqFun, index) {
+    return function (prefix) {
+        var count = index;
+        return function () {
+            result = prefix + seqFun(count);
+            count++;
+            return result;
+        }
+    };
+}
+
+var gensymf = gensymff(inc, 0),
+    gensymg = gensymf("G"),
+    gensymh = gensymf("H");
+
+gensymg();  //G1
+gensymh();  //H1
+gensymg();  //G2
+gensymh();  //H2
+
+
+/*
+ *
+ */
+
+function fibonaccif(x, y){
+    var count = 0;
+    return function fib () {
+        if(count===0) {
+            count++;
+            return x;
+        } else if (count === 1 ) {
+            count++;
+            return y;
+        } else {
+            var b = y;
+            y = x + y;
+            x = b;
+            return y;
+        }
+
+    }
+}
+
+var fib = fibonaccif(0, 1);
+
+fib(); //0
+fib(); //1
+fib(); //1
+fib(); //2
+fib(); //3
+fib(); //5
+fib(); //8
+
+function fibverb(a, b) {
+    return function () {
+        var next = a;
+        a=b;
+        b += next;
+        return next;
+    };
+}
+
+fib = fibverb(0, 1);
+fib(); //0
+fib(); //1
+fib(); //1
+fib(); //2
+fib(); //3
+fib(); //5
+fib(); //8
+
+
+
+function m(value, source) {
+    return {
+        value: value,
+        source: source || String(value)
+    };
+}
+
+
+/*
+ * Write a functin addm that takes two m objects abd returns an m object
+ * JSON.stringify(addm(m(3), m(4)));
+ * //{"value":7,"source":"(3+4)"}
+ * JSON.stringify(addm(m(1), m(Math.PI, "PI")));
+ * //{"value":4.141592653589793,"source":"(1+pi)"}
+ */
+
+function addm(m1, m2) {
+    return m(m1.value + m2.value, "(" +m1.source + "+"+m2.source+")");
+}
+
+JSON.stringify(addm(m(3), m(4))); //{"value":7,"source":"(3+4)"}
+JSON.stringify(addm(m(1), m(Math.PI, "pi"))); //{"value":4.141592653589793,"source":"(1+pi)"}
+
+
+/*
+ * Write a function applym that takes a biary function and a string
+ * and returns a function that acts on m objects
+ * JSON.stringify(addm(m(3), m(4))); //{"value":7,"source":"(3+4)"}
+ * JSON.stringify( applym(mul, '*')(m(3), m(4))); //{"value":12,"source":"(3*4)"}
+ */
+
+function applym (method, identifier) {
+    return function (m1, m2) {
+        return m(method(m1.value, m2.value), ("("+m1.source+""+identifier+""+m2.source+")"));
+    }
+}
+
+var addm = applym(add, "+");
+JSON.stringify(addm(m(3), m(4))); //{"value":7,"source":"(3+4)"}
+JSON.stringify( applym(mul, '*')(m(3), m(4))); //{"value":12,"source":"(3*4)"}
+
