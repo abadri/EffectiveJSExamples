@@ -534,3 +534,198 @@ var addm = applym(add, "+");
 JSON.stringify(addm(m(3), m(4))); //{"value":7,"source":"(3+4)"}
 JSON.stringify( applym(mul, '*')(m(3), m(4))); //{"value":12,"source":"(3*4)"}
 
+
+
+/*
+ * Modify function applym so that the functions it produces cab accept arguments that are
+ * either numbers or m objects
+ */
+
+function applym2 (method, identifier) {
+    return function (m1, m2) {
+        if (typeof m1 === 'number') {
+            m1 = m(m1);
+        }
+        if (typeof m2 === 'number') {
+            m2 = m(m2);
+        }
+
+        return m(method(m1.value, m2.value), ("("+m1.source+""+identifier+""+m2.source+")"));
+    };
+}
+
+var addm = applym2(add, "+");
+JSON.stringify(addm(3, 4)); //{"value": 7, "source": "(3+4)"}
+JSON.stringify(applym(mul, '*')(m(3), m(4))); //{"value":12,"source":"(3*4)"}
+
+
+
+/*
+ * Write a function exp that evaluates simple array expression
+ * var sae = [mul, 3, 3];
+ * exp(sae); // 9
+ * exp(42); // 42
+ */
+
+function exp_1(value) {
+    if(value.length) {
+        return value[0].apply(this, value.slice(1));
+
+    } else {
+        return value;
+    }
+}
+
+var sae = [mul, 3, 3];
+exp_1(sae); // 9
+exp_1(42); // 42
+
+
+/*
+ * Modify exp to evaluate nested array expressions
+ */
+
+function exp(value) {
+   return Array.isArray(value) ? value[0] (exp(value[1]), exp(value[2])) : value;
+}
+
+var nae = [
+    Math.sqrt,
+    [add, [square, 3], [square, 4]]
+];
+
+exp(nae); //5
+
+
+/*
+ * Write a function addg that adds from many invocations, un till it sees and empty invocation
+ *
+ * addg(); // undefined
+ * addg(2)(); // 2
+ * addg(2)(7)(); //9
+ * addg(3)(4)(0); // 7
+ * addg(1)(2)(4)(8)(); // 15
+ */
+
+function addg(first) {
+    if (first === undefined) {
+        return first;
+    }
+    return function more(next) {
+        if(next === undefined) {
+            return first;
+        }
+
+        first += next;
+        return more;
+    };
+}
+
+addg(); // undefined
+addg(2)(); // 2
+addg(2)(7)(); //9
+addg(3)(4)(0); // 7
+addg(1)(2)(4)(8)(); // 15
+
+
+
+/*
+ *  Write a function applyg that will take a binary function and ally it to many invocations
+ */
+
+function applyg(func) {
+    return function(first) {
+        if (first === undefined) {
+            return first;
+        }
+        return function more(next) {
+            if(next === undefined) {
+                return first;
+            }
+
+            first = func(first, next);
+            return more;
+        };
+    };
+}
+
+applyg(mul)(); // undefined
+applyg(mul)(3)(); //3
+applyg(mul)(3)(4)(5)(); //60
+applyg(mul)(1)(2)(4)(8)(); //64
+
+
+/*
+ * Write a function arrayg that will build an array form many invocations
+ * arrayg(); //[]
+ * arrayg(3)(); //[3]
+ * arrayg(3)(4)(5)(); //[3, 4, 5]
+ */
+
+function arrayg(first) {
+
+        if (first === undefined) {
+            return [];
+        }
+        return function more (next) {
+            if(!Array.isArray(first)) {
+                first = [first];
+            }
+            if(next === undefined) {
+                return first;
+            }
+
+            first.push(next);
+
+            return more;
+        };
+
+     var array = [];
+     function more(next) {
+         if (next === undefined) {
+             return [];
+         }
+         return applyg(function (array, value){
+
+         });
+     }
+
+}
+
+
+arrayg(); //[]
+arrayg(3)(); //[3]
+arrayg(3)(4)(5)(); //[3, 4, 5]
+
+
+
+/*
+ * Make a function that takes a unary function and returns a function that takes an argument
+ * and a call back
+ * sqrtc = unaryc(Math.sqrt);
+ * sqrtc(log, 81); //9
+ */
+
+function unaryc(fun) {
+ return function(callback, val) {
+     callback(fun(val));
+ };
+}
+
+var sqrtc = unaryc(Math.sqrt);
+sqrtc(console.log, 81); //9
+
+
+///Object creation pattern
+/*
+function constructor(init) {
+    var that = Other_counstructor(init),
+        member,
+        method =  function () {
+            //init, memver, method
+        };
+    that.method = method;
+
+    return that;
+}`
+*/
