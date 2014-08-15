@@ -1,0 +1,762 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+
+
+
+	<title>Provide your Shipping Address - JCWhitney|Order Confirmation Page - JCWhitney</title>
+
+
+
+
+	<link rel="canonical" href="http://www.jcwhitney.com/checkout/review/paypal/1/shopperid/B25B24BD9F45A353EBA5D56CA118A0C0/ppchoice/1/" />
+
+
+<link href="http://staging.jcwhitney.com/includes/css/stg/style.css?2.53.0v" type="text/css" rel="stylesheet" />
+
+<link rel="icon" href="http://image1.jcwstatics.com/sites/jcwhitney/design/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://image1.jcwstatics.com/sites/jcwhitney/design/favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+	var splitEnabled = new Object();
+	splitEnabled = "";
+      if (typeof dynamicSettingsObj == 'undefined') {
+        var dynamicSettingsObj = {};
+  }
+
+  dynamicSettingsObj.controller="checkout";
+  dynamicSettingsObj.action="review";
+  dynamicSettingsObj.jsDomain="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg";
+  dynamicSettingsObj.jsDomain="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg";
+  dynamicSettingsObj.cssDomain="http://staging.jcwhitney.com/includes/css/stg";
+  dynamicSettingsObj.appVersion="2.53.0v";
+  dynamicSettingsObj.partfinderSort="ymm";
+  dynamicSettingsObj.tealiumEnable=1;
+  dynamicSettingsObj.isTire=0;
+  dynamicSettingsObj.isCart="";
+  dynamicSettingsObj.hostName="http://staging.jcwhitney.com";
+  dynamicSettingsObj.homePage="http://staging.jcwhitney.com";
+  dynamicSettingsObj.autoSubmitVSKillswitch="1";
+  dynamicSettingsObj.myAccountHostName="https://staging.jcwhitney.com";
+  dynamicSettingsObj.cartHostName="http://staging.jcwhitney.com";
+  dynamicSettingsObj.checkoutHostName="https://staging.jcwhitney.com";
+  dynamicSettingsObj.customerId="CUSTOMERID";
+  dynamicSettingsObj.customerFName="FIRSTNAME";
+
+  dynamicSettingsObj.mvtEnable="1";
+  dynamicSettingsObj.mvtSplitMethod="cohorts";
+
+  var blockedBrowser = new Array();
+  var blockedBrowserName = new Array();
+  
+  blockedBrowser[0]="MSIE 6";
+  blockedBrowserName[0]="Microsoft Internet Explorer 6";
+       
+  
+</script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/jquery.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/jserrlogs.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/jquery.blockedbrowser.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/slideshow.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/category303.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/CategoryList.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/productdetail1.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/ymmv2result.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/gridlisttoggler.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/functionsTop.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/_download/gpt.js?2.53.0v"></script>
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/cohorts.js?2.53.0v"></script><script type="text/javascript">
+	jQuery(function($) {
+
+		// Affiliate Params
+		var oAffiliateParams = {}, oUrlParams = {};
+						oAffiliateParams[0] = "JCW_SRC";
+								oAffiliateParams[1] = "cj";
+								oAffiliateParams[2] = "gan";
+								oAffiliateParams[3] = "TID";
+								oAffiliateParams[4] = "jcw";
+						oUrlParams = getUrlParams();
+
+		$.each(oAffiliateParams, function(i, val) {
+			if (typeof oUrlParams[val] != 'undefined') {
+				$.cookie(val, oUrlParams[val], "/");
+			}
+		});
+	});
+</script>
+
+
+</head>
+<body  class="checkoutReviewPage">
+
+
+<script type="text/javascript">
+     (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/usautoparts/jcwhitney/qa/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })(); 
+
+	var utag_data={
+	site:"JCWhitney",
+user_status:"logged out",
+page:"Checkout Order Review",
+section:"Checkout Order Review",
+page_type:"Checkout Order Review"	};
+	
+</script>
+
+<div class="blueStripe"><!--</div>-->
+ <div id="MainContainer">
+    <div id="SubContainer">
+
+        <div id="Header">
+
+            <div id="HeaderColOne">
+
+   
+          
+
+
+        <div id="siteLogo"  >
+            <img class="checkoutSiteLogo" src="http://image1.jcwstatics.com/sites/jcwhitney/design/sitelogo.gif" alt="">
+        </div>
+        
+          <div id="CheckoutLogo">
+	<span class="title1">Checkout</span>
+</div>
+        
+          	<div id="TollFreeLogoV2">
+		<img src="http://image1.jcwstatics.com/sites/jcwhitney/design/shopbyphone_img.jpg"/>
+		<span itemprop="telephone" id="schema_phone">1.866.529.5530&nbsp;&nbsp;1.312.431.6098</span>
+	</div>        
+               
+				<div class="clear"></div>
+            </div>
+
+
+            <div id="HeaderColTwo">
+
+   
+                  
+               
+				<div class="clear"></div>
+			</div>
+
+
+            <div id="HeaderColThree">
+
+   
+                  
+               
+				<div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+<div id="ContentTop">
+	
+	<div id="ContentTopColOne">
+	
+   
+          <div id="CheckoutNavigation">
+	<ul class="clearfix">
+		<li class="billingAndShipping1"><div></div></li>
+		<li class="paymentAndOrder1"><div></div></li>
+		
+	</ul>
+</div>
+     
+	<div class="clear"></div>
+	</div>
+
+	
+	<div id="ContentTopColTwo">
+	
+   
+               
+	<div class="clear"></div>
+	</div>
+
+	
+	<div id="ContentTopColThree">
+	
+   
+               
+	<div class="clear"></div>
+	</div>
+	
+	<div class="clear"></div>
+</div>
+
+<div id="Content">
+
+<div id="ContentColOne">
+
+   
+          <script>
+(function(d, s, id){
+    var js, ref = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id)){
+    js = d.createElement(s); js.id = id; js.async = true;
+    js.src = "//www.paypalobjects.com/js/external/paypal.v1.js";
+    ref.parentNode.insertBefore(js, ref);
+    }
+    }(document, "script", "paypal-js"));
+
+var windowWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if (window.opener && windowWidth <= 450) {
+        window.opener.location.href = document.location.href;
+        window.close();
+    }
+
+</script>
+<div id="CheckoutReview">
+	<form name="forminfo2" id="forminfo2" action="https://staging.jcwhitney.com/checkout/complete/paypal/1/shopperid/B25B24BD9F45A353EBA5D56CA118A0C0/ppchoice/1/ppToken/EC-3VM10300BC0034238/" method="POST">
+			<ul class="orderSummary">
+									<div id="OrderDetail">
+		<div class="widgetTop">
+			<div class="flexBtnBg">
+				<div class="right">
+					<div class="mid"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="widgetMid">
+			<div class="widgetMid2">
+				<div class="orderDetails">
+					<span class="title2">Order Detail</span>
+					<div class="orderDetailsHldr">
+													<span class="title3">Shipping Address</span>
+							<span class="copy2">
+							Abilash badri<br>1 Main St<br>San Jose CA 95131<br>							</span>
+															<span><br><a href="https://staging.jcwhitney.com/checkout/index/paypal/1/shopperid/B25B24BD9F45A353EBA5D56CA118A0C0/ppchoice/1/?ea=shipping#shipping_address">Edit</a></span>
+												</div>
+					<div class="orderDetailsHldr">
+													<span class="title3">Billing Address</span>
+							<span class="copy2">
+								Abilash badri<br>1 Main St<br>San Jose CA 95131<br>							</span>
+															<span><br><a href="https://staging.jcwhitney.com/checkout/index/paypal/1/shopperid/B25B24BD9F45A353EBA5D56CA118A0C0/ppchoice/1/?ea=billing#billing_address">Edit</a></span>
+												</div>
+					<div class="orderDetailsHldr">
+													<span class="title3">Payment Method</span>
+							<span class="copy2">
+							Paypal <br>Abilash badri<br>UNDQF2FU6XFEA<br>Abilash badri<br>verified									<span><br><a href="https://staging.jcwhitney.com/checkout/payment/paypal/1/shopperid/B25B24BD9F45A353EBA5D56CA118A0C0/ppchoice/1/?#payment_method">Edit</a></span>
+															</span>
+											</div>
+				<div class="orderDetailsHldr">
+												<span class="title3">Shipping Method</span> 
+							<span class="copy2">
+								Standard (5-9 days)							</span>
+						</span>								
+													<span><br><a href="https://staging.jcwhitney.com/checkout/payment/paypal/1/shopperid/B25B24BD9F45A353EBA5D56CA118A0C0/ppchoice/1/?#shipping_method">Edit</a></span>
+										</div>
+			</div>
+		</div>
+		<div class="widgetBottom">
+			<div class="flexBtnBg">
+				<div class="right">
+					<div class="mid"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+function updateShipping( frm )
+{
+	$("#doUpdateShipping").val(1);
+	frm.submit();
+}
+
+$(document).ready(function(){
+	$(".place-my-order").bind('click', function(){
+		$("#doPlaceOrder").val(1);
+			document.getElementById('forminfo2').submit();
+	});
+
+	$('.new-tooltip').hover(
+		function(){ 
+			$(this).children('.new-tooltip-box').fadeIn(100); 
+		}, 
+		function() { 
+			$(this).children('.new-tooltip-box').fadeOut(100); 
+		}
+	);
+});</script>
+
+								 
+<div id="OrderSummaryv2d0">
+	<div class="widgetTop">
+		<div class="flexBtnBg">
+			<div class="right"><div class="mid">
+			</div></div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="widgetMid">
+		<div class="widgetMid2 clearfix">
+			<div class="itemTable">
+				<ul>
+					<li class="tableHead">
+						<div class="item">
+							ITEM
+						</div>
+						<div class="price">
+							PRICE
+						</div>
+						
+												
+						<div class="qty">
+							QTY
+						</div>
+						<div class="deliveryCharges">
+						
+														
+						</div>
+						<div class="total">
+							TOTAL
+						</div>
+						<div class="clear"></div>
+					</li>
+					
+					<div class="Hr"></div>
+												<li>
+								<div class="item">
+									<div class="productDetail">
+										<span class="productName">MOTHERS CALIFORNIA GOLD SPRAY WAX</span>
+										<span class="productNumber">Item Number:1052569</span>
+									</div>
+								</div>
+								<div class="price">
+									$14.43								</div>
+								
+																	
+																
+																	
+								<div class="qty">
+									1								</div>
+								<div class="deliveryCharges">
+																	</div>
+								<div class="total">
+									$14.43								</div>
+								<div class="clear"></div>
+							</li>
+											<div class="Hr"></div>
+				</ul>
+			</div>
+			<div class="subTotal">
+				<ul>
+					<li>
+						<label>Subtotal</label>
+						<span class="subTotalVal">$14.43</span>
+						<div class="clear"></div>
+					</li>
+												<li>
+															<label>Shipping</label>
+																	<span class="shippingVal">FREE</span>
+																<div class="clear"></div>
+							</li>
+											
+										<li>
+						<label>Tax</label>
+						<span class="taxVal">$1.08</span>
+						<div class="clear"></div>
+					</li>
+					<li class="productTotal">
+						<label>TOTAL</label>
+						<span class="totalVal">$15.51</span>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="widgetBottom">
+		<div class="flexBtnBg">
+			<span class="right"><span class="mid"></span></span>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+				<li>
+			<input type="submit" class="placeMyOrder" value="">
+		</li>
+	</ul>
+		</form>
+</div>
+        
+               
+<div class="clear"></div>
+</div>
+
+
+<div id="ContentColTwo">
+
+   
+                  
+                  
+               
+<div class="clear"></div>
+</div>
+
+
+<div id="ContentColThree">
+
+   
+          
+	<div id="CheckoutFooter">
+		<div class="Hr"></div>
+		<span class="copy1">&copy; 2014 JC Whitney All rights reserved.
+		<a href="javascript:void(0);" rel="nofollow" onclick="popup_genwin('http://staging.jcwhitney.com/privacy-policy.jcwx', 'checkoutsmpop', 500, 400); return false;">View our privacy policy</a></li>
+		</span>
+		<img class="guarantee" src="http://image1.jcwstatics.com/sites/jcwhitney/design/Guarantee2.jpg" alt="" />
+	</div>
+     
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+
+
+    </div> 
+    <div class="clear"></div>
+</div> 
+</div>
+
+<script type="text/javascript">
+var s_account  = "jcwhitneystaging"
+var sc_domain  = "jcwhitney"
+var sc_cid     = "scid" //apwcid
+var sc_cj      = "A1154013966W44c8db0e4c70a" //A1154013966W44c8db0e4c70a
+var sc_gan     = "D1203533282W47bc75e2bd0dd" //D1203533282W47bc75e2bd0dd
+var sc_cidkwd  = "scid,emcid,affcid,ppcid,chcid,tid,jcwcid" //apwcid,apwkw
+var sc_cidkwdsec  = "JCW_SRC" //JCW_SRC
+var sc_tracksrv = "metrics.jcwhitney.com" //
+var sc_tracksrvsecure = "smetrics.jcwhitney.com" //
+/* Affiliate Code */
+var affCodes = Array(
+);
+</script>
+
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/s_code.js?2.53.0v"></script>
+<script type="text/javascript">
+s.pageName = "Checkout Order Review" 
+s.channel = "Checkout Order Review" 
+s.pageType = "Checkout Order Review" 
+s.products = ";Mothers|1052569;1;14.43" 
+s.prop3 = "Checkout Order Review" 
+s.prop32 = "JC Whitney" 
+s.eVar2 = "Browse" 
+s.eVar62 = "No" 
+
+
+	cookieV48 = $.cookie("evar48");
+	cookieV56 = $.cookie("evar56");
+	cookieV57 = $.cookie("evar57");
+	cookieP17 = $.cookie("prop17");
+	cookieP18 = $.cookie("prop18");
+
+	if ( (cookieV48!=null) && (cookieV56!=null) && (cookieV57!=null) && (cookieP17!=null) && (cookieP18!=null) && (cookieV48!=null)) {
+		s.eVar48 = cookieV48;
+		s.eVar56 = cookieV56;
+		s.eVar57 = cookieV57;
+		s.prop17 = cookieP17;
+		s.prop18 = cookieP18;
+		$.cookie('evar48', '',{expires:-1, path:'/'});
+		$.cookie('evar56', '',{expires:-1, path:'/'});
+		$.cookie('evar57', '',{expires:-1, path:'/'});
+		$.cookie('prop17', '',{expires:-1, path:'/'});
+		$.cookie('prop18', '',{expires:-1, path:'/'});
+	}
+
+	cookieE83 = $.cookie("cmmEvent");
+	if(typeof(cookieE83) != "undefined" && cookieE83 !== null) {
+		if(typeof(s.events) != "undefined" && s.events !== null) {
+			s.events = s.events+","+cookieE83;
+		} else {
+			s.events = cookieE83;
+		}
+		$.cookie('cmmEvent', '',{expires:-1, path:'/'});
+	}
+	
+	if(typeof(yt_event81) != "undefined" && yt_event81 !== null) {
+		s.events = s.events+",event81";
+	}
+
+	if ( typeof componentsContents != 'undefined' && typeof componentsContents['component'] != 'undefined' && typeof componentsContents['component'].Analytics != 'undefined' ) {
+		for ( var key in componentsContents['component'].Analytics[1] ) {
+			if ( componentsContents['component'].Analytics[1][key] != '' && componentsContents['component'].Analytics[1][key] != null ) {
+				eval("s."+key+" = componentsContents['component'].Analytics[1]."+key+"; \n");
+			}
+		}
+	}
+
+	cookieV48 = $.cookie("v48");
+    if (cookieV48!=null) {
+	    s.eVar48 = cookieV48;
+	    $.cookie('v48', '',{expires:-1, path:'/'});
+	}
+
+         
+    if( $("#ShopTabsv2").length !=  0 ){
+	
+		cohortSample='0.20';
+		var headernav_test = new Cohorts.Test({
+			name: 'headernav',
+			sample: cohortSample, 
+			// scope: 1, // Sets the scope for the test and custom variable: 1: Visitor, 2: Session, 3: Page 
+			// cv_slot: 2, // Sets the custom variable slot used in the GoogleAnalyticsAdapter
+			cohorts: {
+				v1: { 
+					onChosen: function() {						
+						$('#ShopTabsv2').hide();                    
+						$('#ShopTabs').show();
+						// remove siteSearchV2 - #15200
+						// $("#SiteSearchv2").hide();
+						// $("#SiteSearch").show();
+					} 
+				},
+				v2: {
+					onChosen: function() {						
+						$('#ShopTabs').hide();
+						$('#ShopTabsv2').show();
+						$('.blueStripe').addClass("blueStripev2"); 
+						// remove siteSearchV2 - #15200
+						// $("#SiteSearchv2").show();
+						// $("#SiteSearch").hide();
+					}
+				},
+			},
+			storageAdapter : {
+				onInitialize: function(inTest, testName, cohort) {
+				// do something
+				},
+				onEvent: function(testName, cohort, eventName) {
+				// do event stuff
+				}
+			}
+		}); 
+
+		//In case page doesn't enter Cohort testing, this code shows old headernav 
+		if( $.cookie('_cohorts_headernav_in_test') == 0 ){						
+				$('#ShopTabsv2').hide();                    
+				$('#ShopTabs').show();
+				// remove siteSearchV2 - #15200
+				// $("#SiteSearchv2").hide();
+				// $("#SiteSearch").show();
+				s.eVar23 = 'Control';                                                     				
+		}		
+}
+	//Assign evar23 value 
+	if( $.cookie('_cohorts_headernav_in_test') == 0 ){
+		s.eVar23 = 'Control';
+	} else {
+		if( $.cookie('_cohorts_headernav_chosen_cohort') == 'v2' ){
+			s.eVar23 = 'New Header Nav';
+		} else {
+			s.eVar23 = 'Old Header Nav';
+		}
+	}
+    
+	if ($.cookie("isSetSplit") == null) {
+		if ( splitEnabled ) {
+			if ($.cookie("splitb") != null) {
+				var evarvalue = $.cookie("splitb");
+				s.eVar49 = "b."+evarvalue;
+				var s_code=s.t();
+				if(s_code) {
+					document.write(s_code);
+				}
+				$.cookie("isSetSplit", "true", {path:"/"});
+			}
+		}
+	}
+		var s_code=s.t();
+		if(s_code) {
+			document.write(s_code)
+		}
+	
+	function setCheckoutCreateAccountFailedOmni(eventValue, evarValue) {
+
+		if ( evarValue == 'Failed' ) {
+			var sc_events = '';
+
+			if ( s.events != '' ) {
+				sc_events = s.events;
+			}
+			if ( sc_events.search(/evarValue/i) < 0 ){
+				if(sc_events != ''){sc_events += ',';}
+				sc_events += eventValue;
+			}
+
+			s.events =  sc_events;
+			s.eVar61 = evarValue;
+			var s_code=s.t();
+			if(s_code){
+				document.write(s_code);
+			}
+		}
+	}
+
+	function changePageName(pageName) {
+		s.pageName = pageName;
+		var s_code=s.t();
+		if(s_code){
+			document.write(s_code);
+		}
+	}
+</script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+<noscript><img src="http://metrics.jcwhitney.com/b/ss/jcwhitneystaging/1/H.22.1--NS/0" height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+
+
+<script type="text/javascript">
+var resx = new Object();
+resx.appid  = "USAP02";
+resx.top1= 100000;
+resx.top2= 100000;
+resx.host= "qa.res-x.com";
+resx.links = "22552";
+resx.price = "14.43";
+resx.qty = "1";
+resx.total = "15.51";
+</script>
+
+
+<div class="lightBox"></div>
+
+<script type="text/javascript">
+var lb = '';
+var PName = '';
+var wlHeader = '';
+var calbKillSwitch = "1";
+var aulbKillSwitch = "1";
+if (getCookie('whitelbpop') == null){  
+	$.ajax({ 
+		url:"/ajax/getcountrybyip",
+		dataType:'json',
+		cache:false,
+		success:function(result){ 
+			if(result.getLocation.country == 'CA' && calbKillSwitch == 1){
+				lb = 'whitelabelcanada';
+				PName = 'Canada White Label';
+				wlHeader = 'whitelabelcanadaheader';
+				showLightbox(lb);
+				showWhiteLabelHeader(wlHeader);
+				fireLightBoxWATagging(PName);
+				document.cookie = "whitelbheader=1; path=/";
+			}
+			else if(result.getLocation.country == 'AU' && aulbKillSwitch == 1){
+				lb = 'whitelabelaustralia';
+				PName = 'Australia White Label';
+				showLightbox(lb);
+				fireLightBoxWATagging(PName);
+			}
+			document.cookie = "whitelbpop=1; path=/";
+		} 
+	});
+} else if (getCookie('whitelbheader')) {
+	wlHeader = 'whitelabelcanadaheader';
+	showWhiteLabelHeader(wlHeader);
+}
+
+//show whitelabel lightbox
+function showLightbox(lb){
+	$.ajax({ 
+		url:"/ajax/"+lb, 
+		cache:false,
+		success:function(data){  
+			$.fancybox({
+				centerOnScroll:true,
+				content:data,
+			});
+		} 
+	});
+}
+
+// fire WA tagging for whitelabel
+function fireLightBoxWATagging(PName){
+	s.linkTrackVars = 'pageName,channel,prop3';
+	s.pageName = PName;
+	s.channel = 'White Label';
+	s.prop3 = 'White Label';
+	var s_code = s.t();
+	if (s_code) {
+		document.write(s_code);
+	}
+}
+
+//show whitelabel header
+function showWhiteLabelHeader(wlHeader){
+	$.ajax({ 
+		url:"/ajax/"+wlHeader, 
+		cache:false,
+		success:function(data){ 
+			$('body').prepend(data);
+		}
+	});
+}
+</script>
+
+
+	<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/bottom.review.js?2.53.0v"></script>
+
+
+    <script type='text/javascript'>
+    $(document).ready(function(){
+        googletag.cmd.push(function(){
+                googletag.pubads().collapseEmptyDivs();
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+        googletag.display('div-gpt-ad-1367561223081-0');
+        });
+    });
+		</script>
+ 
+<script  type="text/javascript">
+    var talCustProp = "PageName=Checkout Order Review#:Prop!ProdFamID=22552#:Prop!SKUPartNumber=1053315#:Prop!SalesValue=15.51#:Prop!OrderSubTotal=14.43";</script>
+
+<script type="text/javascript" src="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/thirdpartyloader.js?2.53.0v"></script>
+
+
+<script type="text/javascript">
+
+
+    var thirdparty_deprioritize=true;
+	var thirdparty_deprioritize_dart=false;
+	var pgaction = 'review';
+	var thirdparty_warp ="http://js.jcwstatics.com/sites/jcwhitney/includes/js/stg/us_auto_parts_warp.js";
+	var analyticsChannel = "Checkout Order Review";
+
+     /*moving appending of filter from global.js to phtml for easy code maintenance 
+       that is, appendFilterIdtoUrl() methods is not applicable to CP/CPO
+     */
+
+     // set ajax timeout
+     $(function() {
+     $.ajaxSetup({timeout: '30000'});
+            appendFilterIdtoUrl();
+      });
+</script>
+
+
+
+
+
+				<script type='text/javascript' src='https://static-na.payments-amazon.com/OffAmazonPayments/us/sandbox/js/Widgets.js?sellerId=A31Y0RR2Z2FIW9'></script>
+			
+
+
+</body>
+</html>
